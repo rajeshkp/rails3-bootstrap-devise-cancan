@@ -11,7 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120418171112) do
+ActiveRecord::Schema.define(:version => 20121109093741) do
+
+# Could not dump table "articles" because of following StandardError
+#   Unknown type 'reference' for column 'user_id'
 
   create_table "roles", :force => true do |t|
     t.string   "name"
